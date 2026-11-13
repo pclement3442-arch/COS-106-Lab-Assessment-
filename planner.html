@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="Clement Precious: Computer Science student and aspiring software engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Planner | Clement Precious</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a class="logo" href="index.html" aria-label="Clement Precious, home">C<b>.</b>P</a><nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" class="active" aria-current="page">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav><div class="tools"><button class="ib" id="theme" aria-label="Switch light or dark theme">&#9788;</button><button class="ib" id="menuBtn" aria-label="Menu" aria-expanded="false">&#9776;</button></div></header>
+<main>
+<section class="wrap narrow"><h1>Academic planner</h1><p>Add assignments, readings and deadlines. Tick a task when it is done. Your list is saved in this browser.</p>
+<div class="pbar" aria-label="Progress"><div><i id="bar"></i></div><span id="pct">0%</span></div>
+<form id="taskForm" class="add" style="padding:0;border:0;background:none"><label for="taskInput" style="position:absolute;left:-9999px">New task</label><input type="text" id="taskInput" placeholder="What do you need to do?" maxlength="120" autocomplete="off"><button class="btn" type="submit">Add task</button></form>
+<div class="tabs" id="tabs"><button class="on" data-f="all">All</button><button data-f="active">To do</button><button data-f="done">Done</button></div>
+<ul id="taskList" class="tasks"></ul><p id="empty" class="empty"></p><button class="link" id="clearDone" type="button">Clear completed</button></section>
+</main>
+<footer class="foot"><p>&copy; 2026 Clement Precious</p><p>COS 106 Term Project, MIVA Open University</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
